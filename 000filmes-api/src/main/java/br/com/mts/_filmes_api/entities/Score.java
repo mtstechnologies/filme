@@ -2,14 +2,16 @@ package br.com.mts._filmes_api.entities;
 
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "tb_score")
 public class Score {
 	
 	@EmbeddedId
 	private ScorePK id = new ScorePK();//chave composta
 
-	private Double valor;
+	private Double punctuation;
 	
 	public Score() {		
 	}
@@ -30,11 +32,11 @@ public class Score {
 		this.id = id;
 	}
 
-	public Double getValue() {
-		return valor;
+	public Double getPunctuation() {
+		return punctuation;
 	}
 
-	public void setValue(Double valor) {
-		this.valor = valor;
+	public void setValue(Double punctuation) {
+		this.punctuation = punctuation;
 	}
 }
