@@ -6,14 +6,14 @@ public class MovieDTO {
 /*lembrando que o DTO nao fica monitorado pela JPA, ou seja, nao faz parte de transacao com o BD*/
 	private Long id;
 	private String title;
-	private Float score;
+	private Double score;
 	private Integer count;
 	private String image;
 	
 	public MovieDTO() {
 	}
 
-	public MovieDTO(Long id, String title, Float score, Integer count, String image) {
+	public MovieDTO(Long id, String title, Double score, Integer count, String image) {
 		this.id = id;
 		this.title = title;
 		this.score = score;
@@ -45,11 +45,11 @@ public class MovieDTO {
 		this.title = title;
 	}
 
-	public Float getScore() {
+	public Double getScore() {
 		return score;
 	}
 
-	public void setScore(Float score) {
+	public void setScore(Double score) {
 		this.score = score;
 	}
 

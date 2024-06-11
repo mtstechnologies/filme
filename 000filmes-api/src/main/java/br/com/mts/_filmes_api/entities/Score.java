@@ -36,7 +36,7 @@ public class Score {
 		return punctuation;
 	}
 
-	public void setValue(Double punctuation) {
+	public void setPunctuation(Double punctuation) {
 		this.punctuation = punctuation;
 	}
 }
